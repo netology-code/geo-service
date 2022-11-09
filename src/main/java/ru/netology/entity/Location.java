@@ -8,13 +8,13 @@ public class Location {
 
     private final String street;
 
-    private final int builing;
+    private final int building;
 
     public Location(String city, Country country, String street, int builing) {
         this.city = city;
         this.country = country;
         this.street = street;
-        this.builing = builing;
+        this.building = builing;
     }
 
     public String getCity() {
@@ -29,7 +29,17 @@ public class Location {
         return street;
     }
 
-    public int getBuiling() {
-        return builing;
+    public int getBuilding() {
+        return building;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "city='" + city + '\'' +
+                ", country=" + country +
+                ", street='" + street + '\'' +
+                ", building=" + building +
+                '}';
     }
 }
