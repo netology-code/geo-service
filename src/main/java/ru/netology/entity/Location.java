@@ -10,11 +10,11 @@ public class Location {
 
     private final int building;
 
-    public Location(String city, Country country, String street, int builing) {
+    public Location(String city, Country country, String street, int building) {
         this.city = city;
         this.country = country;
         this.street = street;
-        this.building = builing;
+        this.building = building;
     }
 
     public String getCity() {
